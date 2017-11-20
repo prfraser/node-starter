@@ -4,8 +4,16 @@ const github = axios.create({
   baseURL: 'https://api.github.com'
 })
 
-function reposBy(username) {
-  return github.get(`/users/${username}/repos`)
+function reposBy(username, repo) {
+  return github.get(`/repos/${username}/${repo}`)
 }
 
-module.exports = { reposBy }
+function readmeBy(username, repo) {
+  return github.get(`/repos/${username}/${repo}/readme`)
+}
+
+function issuesBy(username, repo) {
+  return github.get(`/repos/${username}/${repo}/issues`)
+}
+
+module.exports = { reposBy, readmeBy, issuesBy }

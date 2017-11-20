@@ -26,3 +26,22 @@ Challenges:
 3. Add `hottestTemperature` function, which takes an array of temperatures, and returns the highest one
 
 */
+
+function convertFahrenheitToCelsius(fahrenheit) {
+	return (fahrenheit - 32) / 1.8
+}
+
+console.log(convertFahrenheitToCelsius(87))
+console.log(convertFahrenheitToCelsius(90))
+
+function formatCelsius(temp) {
+	let wholeTemp = Math.round(temp);
+	return `${wholeTemp}°C`
+}
+console.log(formatCelsius(30.6))
+console.log(formatCelsius(30.3))
+
+function hottestTemperatue(tempArray) {
+	return Math.max(...tempArray)
+}
+console.log(hottestTemperatue([30, 29, 20, 50]))

@@ -1,5 +1,5 @@
 {
-  "name": "node-zoo-cli",
+  "name": "zoo-cli",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -13,5 +13,15 @@
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
-  }
+  },
+  "description": "Challenges can be found within the code (the .js files)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prfraser/node-starter.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/prfraser/node-starter/issues"
+  },
+  "homepage": "https://github.com/prfraser/node-starter#readme"
 }
